@@ -1,4 +1,4 @@
-#  explate - the chromium extension template 
+#  explate
 
 ## Getting started
 ```bash
