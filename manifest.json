@@ -1,0 +1,21 @@
+{
+  "name": "your-extension-name-here",
+  "version": "0.0.1",
+  "description": "Extension description",
+  "manifest_version": 3,
+  "permissions": ["declarativeContent"],
+  "options_page": "src/settings.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/entry.ts"]
+    }
+  ],
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "src/extension.html"
+  }
+}
