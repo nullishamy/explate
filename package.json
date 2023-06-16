@@ -7,14 +7,12 @@
   "license": "LICENSE-HERE",
   "scripts": {
     "build:prod": "parcel build",
-    "build:dev": "parcel watch --public-url '../dist' --host localhost",
+    "build:dev": "parcel watch  --host localhost",
     "dev": "concurrently --kill-others --prefix [{name}] --names dev-server \"npm:build:dev\""
   },
   "_comment": "Parcel config vv",
   "source": [
-    "manifest.json",
-    "src/extension.html",
-    "src/settings.html"
+    "manifest.json"
   ],
   "staticFiles": {
     "staticPath": "static/"
